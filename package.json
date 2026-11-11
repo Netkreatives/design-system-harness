@@ -1,0 +1,27 @@
+{
+  "name": "design-system-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.6",
+  "workspaces": ["examples/*"],
+  "scripts": {
+    "design": "bun src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test --timeout 60000",
+    "demo:build": "bun build examples/fieldwork/consumer/main.tsx --outdir examples/fieldwork/.preview --target browser",
+    "verify": "bun run typecheck && bun run test && bun run demo:build"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "5.9.3",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "happy-dom": "21.0.4"
+  }
+}

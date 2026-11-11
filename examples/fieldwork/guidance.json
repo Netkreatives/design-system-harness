@@ -1,0 +1,26 @@
+[
+  {
+    "componentId": "@harness-demo/fieldwork#Button",
+    "intent": "Make the next commitment clear without pressuring the guest.",
+    "whenToUse": "One primary action per step, named with a verb and its object.",
+    "avoid": "Vague Continue copy or multiple competing primary actions.",
+    "example": "consumer/Reservation.tsx",
+    "review": { "status": "draft" }
+  },
+  {
+    "componentId": "@harness-demo/fieldwork#DateRangePicker",
+    "intent": "Preserve the guest's calendar dates and explain invalid ranges.",
+    "whenToUse": "Arrival and departure selection for a stay using local date strings.",
+    "avoid": "Converting a local calendar date into a UTC instant or discarding input after a failed request.",
+    "example": "consumer/Reservation.tsx",
+    "review": { "status": "draft" }
+  },
+  {
+    "componentId": "@harness-demo/fieldwork#Notice",
+    "intent": "Make recovery specific and keep the guest's work.",
+    "whenToUse": "Confirmation or a failed reservation with an actionable retry.",
+    "avoid": "Success styling before confirmation from the service.",
+    "example": "consumer/Reservation.tsx",
+    "review": { "status": "draft" }
+  }
+]

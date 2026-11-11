@@ -1,0 +1,11 @@
+[
+  {
+    "id": "reservation",
+    "title": "Reserve a cabin without losing the guest's dates",
+    "components": ["@harness-demo/fieldwork#DateRangePicker", "@harness-demo/fieldwork#Button", "@harness-demo/fieldwork#Notice"],
+    "steps": ["Choose arrival and departure", "Validate departure is after arrival", "Submit once while controls are disabled", "Confirm from the service response or preserve dates for recovery"],
+    "states": ["editing", "submitting", "failed", "confirmed"],
+    "example": "consumer/Reservation.tsx",
+    "status": "draft"
+  }
+]

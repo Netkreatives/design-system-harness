@@ -1,0 +1,22 @@
+[
+  {
+    "componentId": "@harness-demo/switchyard#Action",
+    "intent": "Distinguish worker commands from navigation so each action uses the appropriate native control.",
+    "whenToUse": "Use kind command with onActivate to restart or retry; use kind link with href to open reference material.",
+    "avoid": "Inventing a disabled or loading prop; the current restart consumer hides the command while work is pending.",
+    "example": "consumer/Restart.tsx",
+    "review": {
+      "status": "draft"
+    }
+  },
+  {
+    "componentId": "@harness-demo/switchyard#Status",
+    "intent": "Report the observed worker restart state without claiming completion before the promise resolves.",
+    "whenToUse": "Use idle, working, or complete with explanatory detail; the consumer renders a separate alert on failure.",
+    "avoid": "Passing failed as phase, which is outside the public contract, or treating a button click as completion.",
+    "example": "consumer/Restart.tsx",
+    "review": {
+      "status": "draft"
+    }
+  }
+]

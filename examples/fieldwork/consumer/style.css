@@ -1,0 +1,18 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #173b31; background: #f4f1e8; }
+body { margin: 0; padding: 5vh 1rem; }
+* { box-sizing: border-box; }
+.fw-card { max-width: 38rem; margin: auto; background: #fffdf7; padding: clamp(1.25rem, 5vw, 3rem); border: 1px solid #d6d9cb; }
+h1 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.1; }
+p { line-height: 1.6; }
+.fw-eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; }
+.fw-form { border: 0; margin: 0; padding: 0; }
+.fw-dates { display: grid; gap: .6rem; padding: 1rem; margin: 1.5rem 0; border: 1px solid #728575; }
+.fw-dates legend { padding: 0 .4rem; font-weight: 600; }
+input, button { font: inherit; min-height: 44px; padding: .65rem .85rem; border-radius: 3px; }
+input { width: 100%; border: 1px solid #728575; background: white; color: #173b31; }
+.fw-button { border: 0; background: #173b31; color: #fffdf7; cursor: pointer; }
+.fw-button:disabled { opacity: .65; cursor: wait; }
+:focus-visible { outline: 3px solid #a64c16; outline-offset: 3px; }
+.fw-notice { padding: 1rem; margin: 1.5rem 0; border-left: 3px solid currentColor; }
+.fw-error, [role=alert] { color: #8d2c21; }
+.fw-footnote { font-size: .8rem; color: #53645a; margin-top: 2rem; }

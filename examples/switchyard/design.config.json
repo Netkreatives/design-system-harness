@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "switchyard",
+  "tsconfig": "tsconfig.json",
+  "consumer": "consumer/Restart.tsx",
+  "entries": [
+    {
+      "file": "src/public.ts",
+      "importPath": "@harness-demo/switchyard",
+      "names": [
+        "Action",
+        "Status"
+      ]
+    }
+  ],
+  "inputs": [
+    "src",
+    "consumer",
+    "package.json",
+    "tsconfig.consumer.json"
+  ],
+  "guidance": "guidance.json",
+  "flows": "flows.json",
+  "checks": [
+    {
+      "name": "consumer-types",
+      "scope": "TypeScript compatibility of Switchyard public exports and restart consumer",
+      "argv": [
+        "bun",
+        "../../node_modules/typescript/bin/tsc",
+        "--project",
+        "tsconfig.consumer.json",
+        "--noEmit"
+      ],
+      "timeoutMs": 30000
+    }
+  ]
+}

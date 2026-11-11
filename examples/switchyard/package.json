@@ -1,0 +1,8 @@
+{
+  "name": "@harness-demo/switchyard",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/public.ts" },
+  "peerDependencies": { "react": "19.3.1" }
+}

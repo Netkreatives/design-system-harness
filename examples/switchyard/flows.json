@@ -1,0 +1,25 @@
+[
+  {
+    "id": "restart-worker",
+    "title": "Restart a worker and recover after a failed request",
+    "components": [
+      "@harness-demo/switchyard#Action",
+      "@harness-demo/switchyard#Status"
+    ],
+    "steps": [
+      "Show readiness and the restart command",
+      "Start the supplied restart promise and hide the command while working",
+      "Show completion only after the promise resolves",
+      "On rejection, show an alert and offer Retry restart",
+      "Keep the guidance link available throughout"
+    ],
+    "states": [
+      "idle",
+      "working",
+      "failed",
+      "complete"
+    ],
+    "example": "consumer/Restart.tsx",
+    "status": "draft"
+  }
+]
